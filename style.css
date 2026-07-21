@@ -1,0 +1,54 @@
+/* ========= BASIC RESET ========= */
+*{box-sizing:border-box}
+
+/* Change gradient colors here */
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:linear-gradient(135deg,#667eea,#764ba2);
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ min-height:100vh;
+}
+
+/* Main card */
+/* Try changing width, padding, border-radius */
+.card{
+ width:320px;
+ padding:30px;
+ text-align:center;
+ border-radius:20px;
+ background:rgba(255,255,255,.15);
+ backdrop-filter:blur(10px);
+}
+
+/* Profile image */
+.avatar{
+ width:100px;
+ height:100px;
+ border-radius:50%;
+ background:#ddd;
+}
+
+/* Link buttons */
+a,button{
+ display:block;
+ margin:10px 0;
+ padding:12px;
+ border:none;
+ border-radius:10px;
+ text-decoration:none;
+ cursor:pointer;
+}
+
+/* HINT:
+Add:
+transition:0.3s;
+Then create a:hover{transform:scale(1.05);}
+*/
+
+/* Dark mode */
+.dark{background:#111;}
+.dark .card{background:rgba(0,0,0,.35);}
+.dark a,.dark button{background:#222;color:#fff;}
